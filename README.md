@@ -16,6 +16,6 @@ Hacker Mode:
 - [ ] Multiple user functionality should be present. Make sure the different users have their data stored separately and shown correctly on the Website.
 - [ ] The Clock should have additional user interactivity. Add sound effects, options to change colour, dimensions of the clock hands as per user's input, etc. Add an option for the user to modify the clock timing as well.(Customisation)
 
-[Link for website](https://suba1210.github.io/To-Do-List/)
+[Click here to head over to the website](https://suba1210.github.io/To-Do-List/)
 
 
