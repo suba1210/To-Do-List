@@ -1,0 +1,397 @@
+header {
+    font-family: "Sofia", sans-serif;
+    font-size: 3.5rem;
+    text-align:center;
+}
+.changeStyle{
+  font-family: "Sofia", sans-serif;
+  font-size:1.5rem;
+}
+
+.change{
+  padding: 10px;
+  color:purple;
+  border-radius:10px;
+}
+
+body{
+    background-color: pink;
+    font-weight: bolder;
+}
+.subhead{
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+    color:purple;
+    font-size: 1rem;
+
+}
+
+.analog{
+  display:flex;
+  flex-direction: column;
+}
+/************** analog clock *************/
+.clock {
+    background: #ececec;
+    width: 300px;
+    height: 300px;
+    margin: 8rem;
+    border-radius: 50%;
+    border: 14px solid #333;
+    position: relative;
+    box-shadow: 0 2vw 4vw -1vw rgba(0,0,0,0.8);
+  }
+  
+  .dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #ccc;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    z-index: 10;
+    box-shadow: 0 2px 4px -1px black;
+  }
+  
+  .hour-hand {
+    position: absolute;
+    z-index: 5;
+    width: 4px;
+    height: 65px;
+    background: #333;
+    top: 79px;
+    transform-origin: 50% 72px;
+    left: 50%;
+    margin-left: -2px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+  }
+  
+  .minute-hand {
+    position: absolute;
+    z-index: 6;
+    width: 4px;
+    height: 100px;
+    background: #666;
+    top: 46px;
+    left: 50%;
+    margin-left: -2px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transform-origin: 50% 105px;
+  }
+  
+  .second-hand {
+    position: absolute;
+    z-index: 7;
+    width: 2px;
+    height: 120px;
+    background: gold;
+    top: 26px;
+    lefT: 50%;
+    margin-left: -1px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transform-origin: 50% 125px;
+  }
+  
+  #span {
+    display: inline-block;
+    position: absolute;
+    color: #333;
+    font-size: 22px;
+    font-family: 'Poiret One';
+    font-weight: 700;
+    z-index: 4;
+  }
+  
+  .h12 {
+    top: 30px;
+    left: 50%;
+    margin-left: -9px;
+  }
+  .h3 {
+    top: 140px;
+    right: 30px;
+  }
+  .h6 {
+    bottom: 30px;
+    left: 50%;
+    margin-left: -5px;
+  }
+  .h9 {
+    left: 32px;
+    top: 140px;
+  }
+  
+  .diallines {
+    position: absolute;
+    z-index: 2;
+    width: 2px;
+    height: 15px;
+    background: #666;
+    left: 50%;
+    margin-left: -1px;
+    transform-origin: 50% 150px;
+  }
+  .diallines:nth-of-type(5n) {
+    position: absolute;
+    z-index: 2;
+    width: 4px;
+    height: 25px;
+    background: #666;
+    left: 50%;
+    margin-left: -1px;
+    transform-origin: 50% 150px;
+  }
+  
+  .info {
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    border-radius: 7px;
+    background: #ccc;
+    text-align: center;
+    line-height: 20px;
+    color: #000;
+    font-size: 11px;
+    top: 200px;
+    left: 50%;
+    margin-left: -60px;
+    font-family: "Poiret One";
+    font-weight: 700;
+    z-index: 3;
+    letter-spacing: 3px;
+    margin-left: -60px;
+    left: 50%;
+  }
+  .date {
+      top: 80px;
+    }
+  .day {
+      top: 200px;
+  }
+
+  /**************  analog clock *************/
+
+
+  /************* digital clock************/
+
+  .container{
+    width: 300px;
+    height: fit-content;
+    background: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    border:  rgb(104, 63, 252) 10px solid;
+    margin: 8rem;
+    padding:2rem;
+    text-align: center;
+  }
+  .animate{
+    border:  rgb(245, 32, 227) 10px solid;
+  }
+  .container h1{
+    font-weight: 900;
+    font-size: 60px;
+  
+  }
+
+
+  /************* digital clock************/
+
+  /*********** create new task ******/
+  .btn {
+    background-color: rgb(241, 9, 241);
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 2rem;
+    padding:1rem;   
+  }
+.createTask{
+    display:flex;
+    justify-content: center;
+
+}
+  /*********** create new task ******/
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=text]{
+
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  width: 400px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 1rem;
+}
+
+input:focus {
+    background-color: lightblue;
+}
+
+.dt{
+    width: 200px;
+}
+
+.createButton{
+    font-weight: bolder;
+    padding: 10px;
+    color:blueviolet
+}
+.createButton:hover{
+    background-color: rgb(189, 184, 184) ;
+}
+
+.formbox{
+  border:2px solid black;
+  padding:1rem;
+  margin:0 auto;
+  max-width: 600px ;
+}
+.allTasks,.dueToday{
+  max-width: 500px ;
+  margin:0 auto;
+}
+.list{
+  list-style-type: none;
+  background: #eee;
+  margin:1em;
+  padding:1rem;
+  font-size: 20px;
+}
+.list:nth-child(even) {
+  background: #bbbaba;
+}
+.completed,.delete{
+  margin:5px;
+  padding:8px;
+}
+.completed{
+  font-weight: bold;
+  color: green;
+}
+.delete{
+  font-weight: bold;
+  color: red;
+}
+.notask{
+  text-align: center;
+  font-size: 2rem;
+  color:royalblue;
+}
+.due{
+  float:right;
+}
+.hiding{
+  display:none;
+}
+.strike{
+  text-decoration: line-through;
+}
+
+.cal{
+  display:flex;
+  flex-direction: row;
+}
+
+
+
+
+/*****************calender ******************/
+
+ul{
+  list-style-type: none;
+  text-align: center;
+  font-family: Verdana, sans-serif;box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+li:not(:first-child){
+  cursor: pointer;
+}
+.calender{
+  box-sizing: border-box;  
+  width: 40%;
+  margin: auto;
+  box-shadow: 2px 2px 4px rgba(0,0,0,.5);
+}
+.calender .month{
+  background-color: #2ecc71;
+  padding: 40px;
+  color: #ecf0f1;
+  width: 100%;
+  position: relative;
+}
+.calender .month .next,.calender .month .prev{
+  position: absolute;
+  top: calc(50% - 15px);
+  cursor: pointer;
+  padding: 5px;
+  display: block;
+}
+.calender .month .prev{
+  left: 10px;
+}
+.calender .month .next{
+  right: 10px;
+}
+.calender .month .next:hover,.calender .month .prev:hover{
+  background-color: rgba(0,0,0,.2);
+}
+.calender .weeks{display: flex;}
+.calender .weeks li{
+  background-color: #bdc3c7;
+  flex: 1;
+  opacity: .5;
+  position: relative;
+  animation: motion 2s;
+  padding: 10px; 
+}
+.calender .weeks li:hover{background-color: rgba(0,0,0,.2);}
+
+.calender .days {
+  display: flex;
+  flex-wrap: wrap;
+}
+.calender .days li{
+  flex-basis: calc(100% / 7); 
+  padding: 10px 0;
+  opacity: .7;
+  background-color: #bdc3c7;
+}
+.calender .days li:hover{background-color: rgba(0,0,0,.3);}
+
+/*****************calender ******************/
+
+@media(max-width:425px){
+  input[type=text]{
+   width:fit-content;
+  }
+}
+@media(max-width:800px){
+  .cal{
+    flex-direction: column;
+  }
+  .calender{
+    width: 90%;
+  }
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan It Right!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="icon" href="favicon.png" type="image/icon type">
+</head>
+<body>
+    <header class="font-effect-neon" >Plan It Right!</header>
+    <p class="subhead" >Because, the way we spend our TIME defines who we are!</p>
+    <div><p class="changeStyle">Change Clock Style</p>
+      <div><button class="change" id="analog">Analog Clock</button>
+      <button class="change" id="digital">Digital Clock</button></div>
+    </div>
+    
+    <!------Clock ------->
+    <div class="cal">
+    <div class="clock" >
+        <div>
+          <div class="info date"></div>
+          <div class="info day"></div>
+        </div>
+        <div class="dot"></div>
+        <div>
+          <div class="hour-hand"></div>
+          <div class="minute-hand"></div>
+          <div class="second-hand"></div>
+        </div>
+        <div>
+          <span id="span"   class="h3">3</span>
+          <span id="span"   class="h6">6</span>
+          <span id="span"   class="h9">9</span>
+          <span  id="span"  class="h12">12</span>
+        </div>
+        <div class="diallines"></div>
+      </div>
+      <div  class="container">
+        <h1></h1>
+      </div>
+      <br><br><br><br>
+      <div class="calender">
+        
+        <ul class="month">
+          
+          <li>
+            <h1>January</h1>
+            <h2>2016</h2>
+          </li>
+          <span class="prev">&#10094;</span>
+          <span class="next">&#10095;</span>
+        </ul>
+        <ul class="weeks">
+          <li>Sa</li>
+          <li>Su</li>
+          <li>Mo</li>
+          <li>Tu</li>
+          <li>We</li>
+          <li>Th</li>
+          <li>Fr</li>
+        </ul>
+        <ul class="days">
+      
+        </ul>
+      </div>
+    </div>
+
+
+      <!-------Clock ---------->
+      <br><br><br><br>
+      <!---------Form----------->
+      <div class="formbox">
+      <div class="createTask">
+        <div class="btn"><i class="fas fa-tasks">    CREATE A NEW TASK</i></div>
+      </div>
+      <br>
+      <div class="creating">
+        <form id="form" action='/sum'>
+            <input type="text" name="task" placeholder="Task description" required><br>
+            <input class="dt" type="date" name="date" required><br>
+            <input class="dt" type="time" name="time" required><br>
+            <button class="createButton">CREATE TASK</button><br>
+        </form>
+      </div>
+    </div>
+    
+    <div>
+   <!---------Form----------->
+    <br><br><br><br>
+      
+    <!------- To Do Checklist---------->
+    <div class="side">
+    <DIV class="allTasks">
+        <h2 class="btn" style="text-align: center;">ALL TASKS</h2>
+        <div></div>
+        <div id="myUL"></div>
+          
+    </DIV><br><br><br><br><br><br><br><br>
+  </div>
+<!------- To Do Checklist---------->
+
+<audio id="completeMusic">
+  <source src="completed music.wav" type="audio/wav">
+</audio>
+<audio id="errorMusic">
+  <source src="error.wav" type="audio/wav">
+</audio>
+<audio id="createMusic">
+  <source src="clicking.wav" type="audio/wav">
+</audio>
+<script src="script.js"></script>
+</body>
+</html>
